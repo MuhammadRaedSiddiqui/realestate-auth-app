@@ -2,15 +2,15 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-// TODO: Replace with your Firebase config
-// Get this from Firebase Console > Project Settings > Your apps
+// Firebase configuration from Firebase Console
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAjjOHEcBd7KdmfQREF9LbFgBq1wzCn4fI",
+  authDomain: "real-estate-app-9446f.firebaseapp.com",
+  projectId: "real-estate-app-9446f",
+  storageBucket: "real-estate-app-9446f.firebasestorage.app",
+  messagingSenderId: "164716838231",
+  appId: "1:164716838231:web:6ede335c30ee21e5295212",
+  measurementId: "G-5Z37S994GF"
 };
 
 const app = initializeApp(firebaseConfig);
