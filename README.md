@@ -1,11 +1,10 @@
 # React Native Real Estate Authentication System
 
-[![React Native](https://img.shields.io/badge/React%20Native-0.73-blue.svg)](https://reactnative.dev/)
-[![Expo](https://img.shields.io/badge/Expo-~50.0-000020.svg)](https://expo.dev/)
+[![React Native](https://img.shields.io/badge/React%20Native-0.84-blue.svg)](https://reactnative.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase-10.7-orange.svg)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A complete, production-ready authentication system with a clean, professional UI designed for a real estate listing application. Built with React Native, Expo, and Firebase.
+A complete, production-ready authentication system with a clean, professional UI designed for a real estate listing application. Built with bare React Native and Firebase.
 
 ## 🎯 Features
 
@@ -53,10 +52,11 @@ Welcome screen displaying user information after successful login.
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (v22.11 or higher)
 - npm or yarn
-- Expo CLI
-- A smartphone with Expo Go app (for testing)
+- **For Android**: Android Studio, JDK 17+, Android SDK
+- **For iOS**: macOS with Xcode 14+
+- A physical device or emulator for testing
 
 ### Installation
 
@@ -78,15 +78,44 @@ npm install
    - Create a Firestore database
    - Update `src/config/firebase.js` with your Firebase config
 
-4. **Start the development server**
+4. **Start the Metro bundler**
 ```bash
 npm start
 ```
 
-5. **Run on your device**
-   - Install "Expo Go" app from App Store or Play Store
-   - Scan the QR code shown in the terminal
-   - The app will load on your device
+5. **Run on Android** (in a new terminal)
+```bash
+npm run android
+```
+
+6. **Run on iOS** (macOS only, in a new terminal)
+```bash
+npm run ios
+```
+
+### Android Setup Requirements
+
+To build for Android, you need:
+1. **Java Development Kit (JDK) 17 or higher**
+   - Download from [Oracle](https://www.oracle.com/java/technologies/downloads/) or [OpenJDK](https://adoptium.net/)
+   - Set `JAVA_HOME` environment variable
+
+2. **Android Studio**
+   - Download from [developer.android.com](https://developer.android.com/studio)
+   - Install Android SDK (API 34 recommended)
+   - Set `ANDROID_HOME` environment variable
+
+3. **Configure environment variables** (Windows)
+   ```
+   JAVA_HOME=C:\Program Files\Java\jdk-17
+   ANDROID_HOME=C:\Users\YourUsername\AppData\Local\Android\Sdk
+   ```
+   Add to PATH:
+   ```
+   %JAVA_HOME%\bin
+   %ANDROID_HOME%\platform-tools
+   %ANDROID_HOME%\tools
+   ```
 
 ## 📖 Documentation
 
@@ -118,11 +147,12 @@ npm start
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React Native with Expo
+- **Framework**: React Native 0.84.1 (bare workflow)
 - **Navigation**: React Navigation
 - **Backend**: Firebase (Authentication + Firestore)
 - **Language**: JavaScript
 - **UI**: Custom components with consistent design system
+- **Build**: Metro bundler with native Android/iOS projects
 
 ## 🎨 Design System
 

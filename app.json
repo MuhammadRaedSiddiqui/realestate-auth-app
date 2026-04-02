@@ -1,20 +1,4 @@
 {
-  "expo": {
-    "name": "RealEstate Auth",
-    "slug": "realestate-auth-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.realestate.authapp"
-    },
-    "android": {
-      "package": "com.realestate.authapp"
-    }
-  }
+  "name": "RealEstateAuth",
+  "displayName": "RealEstate Auth"
 }

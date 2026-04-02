@@ -11,6 +11,18 @@ npm-debug.*
 *.orig.*
 web-build/
 
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcworkspace
+ios/*.xcuserdata
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+
 # macOS
 .DS_Store
 
